@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Messaround</title>
+</head>
+<body>
+    <h1>Let's learn javascript!</h1>
+    <h2>How do we do onclick events and alerts on an anchor</h2>
+    <a href="https://www.youtube.com" target="_blank" 
+    onclick="alert('Warning! You are navigating away from the webpage')">Youtube link</a>
+    <hr>
+    <h2>How do we display and hide text?</h2>
+    <h2>What's my secret my identity?</h2>
+    <p id="secret"></p>
+    <button onclick="
+    document.getElementById('secret').innerHTML='Nana nana nana nana, Batman!';
+    document.getElementById('secret').style.display='block'
+    ">Reveal!</button>
+    <button onclick="document.getElementById('secret').style.display='none'">Hide</button>
+    <h2>How do we change an image with javascript?</h2>
+    <img src="images/bulb_on.jpg" id="myImage" style="height:200px; width: 200px;">
+    <button onclick="document.getElementById('myImage').src='images/bulb_off.jpg'"> Bulb Off</button>
+    <!-- student challenge, make a button to turn the light bulb back on-->
+    <button onclick="document.getElementById('myImage').src='images/bulb_on.jpg'"> Bulb On</button>
+    <!-- CSS style attribute 1-->
+    <button onclick="document.getElementById('myImage').style.border = 'thick solid yellow';">Highlight </button>
+    <!-- CSS style attribute 2-->
+    <button onclick="document.getElementById('myImage').style.height = '300px';document.getElementById('myImage').style.width = '300px';">Bigger</button>
+    <button onclick="document.getElementById('myImage').style.height = '200px';document.getElementById('myImage').style.width = '200px';">Smaller</button>
+
+    <!-- student challenage, make a button to turn the light bulb back on-->
+    <h2>How do we change styles with a button?</h2>
+    <p id="alice">Hi. I am Alice</p>
+    <button onclick="document.getElementById('alice').style.color='blue';
+    document.getElementById('alice').style.fontSize='5px'"> Cake - Eat me</button>
+    <button onclick="document.getElementById('alice').style.color='red';
+    document.getElementById('alice').style.fontSize='50px'">Potion - Drink Me</button>
+
+
+    
+</body>
+</html>
